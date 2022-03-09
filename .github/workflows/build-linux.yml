@@ -51,6 +51,9 @@ jobs:
           git submodule sync
           git submodule update --init --recursive
 
+      - name: Contributor Map
+        uses: tunaitis/contributor-map@v1
+  
       - name: Install Dependencies
         run: |
           sudo apt-get -y update
